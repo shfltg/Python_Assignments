@@ -19,7 +19,7 @@ else:
 ● If user enters a positive number just continue in the loop and print “Good Going”"""
 
 
-
+while True:
     n = int(input("Enter a number "))
     if n < 0:
         print("It's over")
