@@ -5,8 +5,8 @@ print("a =",a)
 print("b=",b)
 print("c =",c)
 
-
 #2. Create a variable of type complex and swap it with another variable of type integer.
+
 a=1+3j
 b=2
 c=a
@@ -17,6 +17,7 @@ print("b=",b)
 
 #3. Swap two numbers using a third variable and do the same task without using any third variable.
 #with third variable
+
 a = 1 + 3j
 b = 2
 c = a
@@ -42,6 +43,7 @@ print(a)
 
 #6. Write a program to check the data type of the entered values.
 HINT: Printed output should say - The data type of the input value is : int/float/string/etc
+
 #Python 3.x
 a=input("Enter value :")
 print(a)
@@ -51,6 +53,7 @@ print(a)
 
 #5. Write a program to complete the task given below:Ask users to enter any 2 numbers in between 1-10 , add the two numbers and keep the sum in
 #another variable called z. Add 30 to z and store the output in variable result and print result as the final output.
+
 x= int(input("Enter a number between 1-20: "))
 y= int(input("Enter a number between 1-20: "))
 z=x+y
@@ -71,10 +74,13 @@ UpperCamel:
 PythonTraining
 snake_case:
 python_training
+UPPERCASE:
+PYTHON TRAINING
 
 #8. If one data type value is assigned to ‘a’ variable and then a different data type value is assigned to ‘a’
 again. Will it change the value? If Yes then Why?
 a=4
 a=5
 print(a)
-Ouput : 5 because variablke always takes last value
+Ouput : 5 because variable always takes last entered value. It will change the value because the variable ‘a’ is assigned a 
+different memory location everytime we change the values.
