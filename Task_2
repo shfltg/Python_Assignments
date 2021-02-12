@@ -1,0 +1,71 @@
+#1. Write a program in Python to perform the following operation:
+If a number is divisible by 3 it should print “Consultadd” as a string
+If a number is divisible by 5 it should print “c” as a string
+If a number is divisible by both 3 and 5 it should print “Consultadd Python Training” as a string.
+
+
+n = int(input("Enter an input "))
+if n % 5 == 0 and n % 3 == 0:
+    print("Consultadd Python Training")
+elif n % 5 == 0:
+    print("c")
+elif n % 3 == 0:
+    print("Consultadd")
+else:
+   pass
+   
+#4. Write a program in Python to break and continue if the following cases occurs:
+● If user enters a negative number just break the loop and print “It’s Over”
+● If user enters a positive number just continue in the loop and print “Good Going”"""
+
+
+
+    number = int(input("Enter a number "))
+    if number < 0:
+        print("It's over")
+        break
+    elif number >0:
+        print("Good Going")
+        continue
+
+
+#5. Write a program in Python which will find all such numbers which 
+are divisible by 7 but are not a multiple of 5, between 2000 and 3200.
+
+
+lower=2000
+upper= 3200
+for i in range(lower,upper+1):
+    if i % 7 ==0 and i % 5 !=0:
+        print(i)
+
+
+
+#6. What is the output of the following code examples?
+(a) x=123 
+for i in x:
+    print(i)"""
+
+output: TypeError: 'int' object is not iterable
+
+(b)
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+    if i == 3:
+        break
+else:
+    print(“error”)
+output :print(“error”)
+SyntaxError: invalid character in identifier
+
+(c)
+count = 0
+while True:
+    print(count)
+    count += 1
+    if count >= 5:
+        Break
+#Break
+#NameError: name 'Break' is not defined
