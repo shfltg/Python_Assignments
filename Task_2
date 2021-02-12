@@ -20,11 +20,11 @@ else:
 
 
 
-    number = int(input("Enter a number "))
-    if number < 0:
+    n = int(input("Enter a number "))
+    if n < 0:
         print("It's over")
         break
-    elif number >0:
+    elif nr >0:
         print("Good Going")
         continue
 
