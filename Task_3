@@ -1,0 +1,55 @@
+#1. Create a list of 10 elements of four different data types like int, string, complex and float.
+
+l=[2,"Google",1+2j,3.5]
+
+#2. Create a list of size 5 and execute the slicing structure
+
+l=[2,"Google",1+2j,3.5]
+s=l[1:3]
+print(s)
+
+#3. Write a program to get the sum and multiply of all the items in a given list.
+
+(a) sum
+l=[2,8,4,3.5]
+s=sum(l)
+print(s)
+
+OR
+
+l=[2,8,4,3.5]
+sum=0
+for x in l:
+    sum=sum+x
+print(sum)
+
+(b)Multiply
+
+l=[2,8,4,3.5]
+output=1
+for x in l:
+    output= output*x
+print(output)
+
+#4. Find the largest and smallest number from a given list.
+
+(a)Largest
+l=[2,8,4,3.5]
+lar=max(l)
+print(lar)
+
+(b)Smallest
+l=[2,8,4,3.5]
+small=min(l)
+print(small)
+
+#5. Create a new list which contains the specified numbers after removing the even numbers from a predefined list'''
+
+l=[2,9,13,8,7,19]
+new_list=[]
+for x in l:
+    if x%2==0:
+        new_list.append(x)
+print(new_list)
+
+
