@@ -113,4 +113,42 @@ Use two variables, ‘number’ for the number and ‘answer’ for the answer t
 whether they want to continue guessing.
 The program stops if the user guesses the correct number or answers “no”.
 ( The program continues as long as a user has not answered “no” and has not guessed
-the correct number)        
+the correct number)  
+
+#10. Write a program that asks five times to guess the lucky number. Use a while loop and a counter, such as 
+  Counter=1
+ While counter <= 5:
+print(“Type in the”, counter, “number”)
+ counter=counter+1 
+The program asks for five guesses (no matter whether the correct number was guessed or not). 
+If the correct number is guessed, the program outputs “Good guess!”, otherwise it outputs “Try again!”. After the fifth guess it stops and prints “Game over!”
+
+counter=1
+answer=5
+while (counter <= 5):
+    print(“type in the”,counter,“number”)
+    number=int(input"Guess number: ")
+    if number==answer:
+        print("Good guess")
+    elif counter<5:
+        print("Try again")
+    counter=counter+1
+if counter>5:
+    print("game over")
+    
+#11. In the previous question, insert break after the “Good guess!” print statement. 
+break will terminate the while loop so that users do not have to continue guessing after 
+they found the number. If the user does not guess the number at all, 
+print “Sorry but that was not very successful”."""
+    
+counter=1
+answer=5
+while (counter <= 5):
+    print(“type in the”,counter,“number”)
+    number=int(input"Guess number: ")
+    if number==answer:
+        print("Good guess")
+        break
+    else:
+        print("Sorry but that was not very successful")
+    counter=counter+1
