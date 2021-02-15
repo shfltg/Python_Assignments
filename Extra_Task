@@ -1,0 +1,78 @@
+#"""1.Create a list of given structure and get the Access list as provided below:
+x=[100,200,300,400,500,[1,2,3,4,5,[10,20,30,40,50],6,7,8,9],600,700,800]
+Access list: [1, 2, 3, 4]
+Access list: [600, 700]
+Access list: [100, 300, 500, 600, 800]
+Access list: [[800, 700, 600, [1, 2, 3, 4, 5, [10, 20, 30, 40, 50], 6, 7, 8, 9], 500, 400, 300, 200, 100]]
+Access list: [10]
+Access list: [ ]"""
+
+#2.Create a list of thousand numbers using range and xrange and see the difference between each
+other.
+(For reference:https://www.techbeamers.com/python-xrange-range/)
+x=[i for i in range(1001)]
+print(x)
+with xrange it gives error.
+
+#3.How Tuple is beneficial as compared to the list?
+
+Tuples are faster than lists, because they have a constant set of values. Tuples can be used as dictionary keys, 
+because they contain immutable values like strings, numbers, etc.
+
+#4. Write a program in Python to iterate through the list of numbers in the range of 1,100 and print
+the number which is divisible by 3 and is a multiple of 2.
+
+for x in range(1,101):
+    if x%2==0 and x%3==0:
+        print(x)
+
+#5. Write a program in Python to reverse a string and print only the vowel alphabet if it exists in the
+string with their index.
+
+for x in s[-1::-1]:
+    if x in ['a','e','i','o','u']:
+        print(x)
+
+#6. Write a program in Python to iterate through the string “hello my name is abcde” and print the
+string which is having an even length.
+
+for i in "hello my name is abcde".split():
+    if len(i) % 2 == 0:
+        print(i)
+        
+#7. Write a program in python to print the pair of numbers whose sum is equal to the result
+number that is let's say 8.
+x=[1,2,3,4,5,6,7,8,9,-1]'''
+x=[1,2,3,4,5,6,7,8,9,-1]
+for i in x:
+    for k in range(len(x)):
+        if i + x[k]==8:
+            print(i,x[k])
+            
+#8. Write a program in Python to complete the following task:
+. Create two lists such as even_list and odd_list
+. Ask user to enter a number in the range of 1,50 and make sure if the entered number is
+  even, append it to the even_list and if the entered number is odd append it to the odd_list.
+. Keep that in mind you can only add 5 items in each list
+. Make sure once you enter all the 5 elements, calculate the sum of the list and return the
+  maximum of the list.'''
+
+even_list=[]
+odd_list=[]
+n=int(input("Enter a numbers between 1-50: "))
+if (n%2==0):
+       even_list.append(n)
+    print("even_list",even_list)
+else:
+     odd_list.append(n)
+    print("odd_list",odd_list)
+    
+#10. Generate and print another tuple whose values are even numbers in the given tuple
+(1,2,3,4,5,6,7,8,9,10).'''
+l=[]
+for x in (1,2,3,4,5,6,7,8,9,10):
+    if x%2==0:
+       l.append(x)
+t=tuple(l)
+print(t)    
+             
