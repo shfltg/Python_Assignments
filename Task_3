@@ -52,10 +52,17 @@ for x in l:
         new_list.append(x)
 print(new_list)
 
-6. Create a list of elements such that it contains the squares of the first and last 5 elements between
+#6. Create a list of elements such that it contains the squares of the first and last 5 elements between
 1 and30 (both included).
 
-7. Write a program to replace the last element in a list with another list.
+l=[]
+for x in range(1,31):
+    l.append(x*x)
+#print(l)
+print (l[:5])
+print (l[-5:])
+
+#7. Write a program to replace the last element in a list with another list.
 Sample input: [1,3,5,7,9,10], [2,4,6,8]
 Expected output: [1,3,5,7,9,2,4,6,8]
 
@@ -63,27 +70,37 @@ l1=[1,3,5,7,9,10]
 l2=[2,4,6,8]
 l1.pop()
 l=l1+l2
-print(l)'''
+print(l)
 
-'''8. Create a new dictionary by concatenating the following two dictionaries:
+#8. Create a new dictionary by concatenating the following two dictionaries:
 Sample input: a={1:10,2:20} b={3:30,4:40}
 Expected output: {1:10,2:20,3:30,4:40}
 a={1:10,2:20}
 b={3:30,4:40}
 a.update(b)
-print(a)'''
+print(a)
 
-'''9. Create a dictionary that contain numbers in the form(x:x*x) where x takes all the values between 1
+#9. Create a dictionary that contain numbers in the form(x:x*x) where x takes all the values between 1
 and n(both 1 and n included).
 Sample input: n=5
-Expected output: {1:1, 2:4, 3:9, 4:16, 5:25}'''
+Expected output: {1:1, 2:4, 3:9, 4:16, 5:25}
+
+n=int(input("Enter a numbers: "))
+d=dict()
+for x in range(1,n+1):
+    d[x]=x*x
+print(d)
 
 
-'''10. Write a program which accepts a sequence of comma-separated numbers from console and
+#10. Write a program which accepts a sequence of comma-separated numbers from console and
 generates a list and a tuple which contains every number in the form of string.
 Sample input: 34,67,55,33,12,98
 Expected output: [‘34’,’67’,’55’,’33’,’12’,’98’] (‘34’,’67’,’55’,’33’,’12’,’98’)'''
 
 n=int(input("Enter comma separated numbers: "))
-
+list=n.split(",")
+t=tuple(list)
+#print("list: ",list)
+#print("tuple: ",t)
+print(list,t)'''
 
