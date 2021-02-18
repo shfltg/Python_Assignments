@@ -88,3 +88,65 @@ def showNumbers(limit):
         else:
             print(x,"ODD")
 showNumbers(4)
+
+#10. Write a program which uses filter() to make a list whose elements are even numbers between 1
+and 20 (both included)
+
+x=filter(lambda x:x%2==0,range(1,21))
+print(list(x))'''
+
+
+#11. Write a program which uses map() and filter() to make a list whose elements are squares of even
+numbers in [1,2,3,4,5,6,7,8,9,10].
+Hints: Use filter() to filter even elements of the given list
+Use map() to generate a list of squares of the
+numbers in the filtered list. Use lambda() to define anonymous functions.
+
+y=filter(lambda x:x%2==0,(1,2,3,4,5,6,7,8,9,10))
+f=list(y)
+#print(f)
+x=map(lambda y:y*y,f)
+print(list(x))
+
+#12. Write a function to compute 5/0 and use try/except to catch the exceptions'''
+#14. Write a program in Python to find the values which are not divisible by 3 but are a multiple of 7.
+Make sure to use only higher order functions.
+
+y=filter(lambda x:x%3!=0 and x%7==0,range(1,51))
+print(list(y))
+
+#15. Write a program in Python to multiply the elements of a list by itself using a traditional function
+and pass the function to map() to complete the operation.'''
+
+def mul(x):
+    return x*x
+ 
+numbers=[1,2,3,4,5]
+x=map(mul,numbers) 
+print(x)
+print(list(x))
+
+#16 .
+(i)def foo():
+    try:
+        return 1
+    finally:
+        return 2
+k = foo()
+print(k)'''
+
+output: 2
+
+(ii)def a():
+    try:
+        f(x, 4)
+    finally:
+        print('after f')
+        print('after f?')
+a()
+
+Output: The name 'f' is not defined
+the lines after finally: are executed
+
+
+
