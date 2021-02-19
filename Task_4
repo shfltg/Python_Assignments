@@ -109,6 +109,19 @@ x=map(lambda y:y*y,f)
 print(list(x))
 
 #12. Write a function to compute 5/0 and use try/except to catch the exceptions'''
+
+x=5
+y=0
+try:
+    z=x/y
+except:
+    print("cannot divide by zero")
+
+#13.Flatten the list [1,2,3,4,5,6,7] into 1234567 using reduce()
+
+x= reduce(lambda x,y: 10*x+y,[1,2,3,4,5,6,7])
+print(x)
+
 #14. Write a program in Python to find the values which are not divisible by 3 but are a multiple of 7.
 Make sure to use only higher order functions.
 
