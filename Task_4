@@ -23,6 +23,12 @@ print(fun(['a','a','b','b','c','c','d','e']))
 '''4. Write a program that accepts a hyphen-separated sequence of words as input and prints the words
 in a hyphen-separated sequence after sorting them alphabetically.
 
+s="breakdown the string into a list of words"
+words=s.split()
+words.sort()
+for word in words:
+    print(word)
+
 #5. Write a program that accepts a sequence of lines as input and prints the lines after making all
 characters in the sentence capitalized.
 Sample input: Hello world Practice makes man perfect
